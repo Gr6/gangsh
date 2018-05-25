@@ -51,5 +51,14 @@
   </div>
 
 <audio autoplay loop>
-      <source src="https://ghosts.cloud/cdn/bin/audio.mp3">
+      <source src="">
    </audio>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+var source = "https://ghosts.cloud/cdn/bin/audio.mp3";
+var audio = new Audio(); // use the constructor in JavaScript, just easier that way
+audio.addEventListener("load", function() {
+  audio.play();
+}, true);
+audio.src = source;
+audio.autoplay = true; // add this
+</script>
