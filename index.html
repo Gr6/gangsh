@@ -46,14 +46,18 @@
      <video autoplay loop muted id="player">
       <source src="https://dl.dropboxusercontent.com/s/1p48yyxckfnco7a/video.mp4?dl=1" type="video/mp4">
      </video>
-     <audio id="track" loop muted>
+     <audio id="myAudio" loop muted>
       <source src="../i/audio.mp3" type="audio/mpeg">
      </audio>
     </div>
   </div>
 
-<div class='unmute' onclick="document.getElementById('track').muted = !document.getElementById('track').muted;$(this).toggleClass('mute')">a</div>
-
-
+<button onclick="disableMute()" type="button">Enable sound</button>
+<script>
+var x = document.getElementById("myAudio");
+function disableMute() { 
+    x.muted = false;
+}
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
