@@ -52,7 +52,7 @@
     </div>
   </div>
 
-<button id="audioButton" onclick="disableMute()" type="button">Enable sound</button>
+<button id="unmuteButton">Disable Sound</button>
 <script>
 Element.prototype.remove = function() {
     this.parentElement.removeChild(this);
@@ -64,11 +64,10 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
         }
     }
 }
-var x = document.getElementById("myAudio");
-function disableMute() { 
-    x.muted = false;
+  unmuteButton.addEventListener('click', function() {
+    video.muted = false;
     document.getElementById("audioButton").remove();
-}
+  });
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
