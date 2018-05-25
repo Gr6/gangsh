@@ -45,10 +45,7 @@
     <div class="video-foreground">
      <video autoplay loop muted id="player">
       <source src="https://thug.org/vid/almighty.mp4" type="video/mp4">
-     </video>
-     <audio id="myAudio" autoplay loop muted>
-      <source src="../i/audio.mp3" type="audio/mpeg">
-     </audio>
+      </video>
     </div>
   </div>
 
@@ -64,10 +61,10 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
         }
     }
 }
-var x = document.getElementById("myVideo");
+var x = document.getElementById("player");
   unmuteButton.addEventListener('click', function() {
     video.muted = false;
-    document.getElementById("audioButton").remove();
+    document.getElementById("unmuteButton").remove();
   });
 </script>
 
