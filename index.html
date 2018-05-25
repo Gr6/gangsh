@@ -65,6 +65,7 @@ var x = document.getElementById("player");
   unmuteButton.addEventListener('click', function() {
     x.muted = false;
     document.getElementById("unmuteButton").remove();
+    x.play();
   });
 </script>
 <script type="text/javascript">
