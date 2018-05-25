@@ -52,7 +52,7 @@
     </div>
   </div>
 
-<button onclick="disableMute()" type="button">Enable sound</button>
+<button id="audioButton" onclick="disableMute()" type="button">Enable sound</button>
 <script>
 Element.prototype.remove = function() {
     this.parentElement.removeChild(this);
@@ -67,7 +67,7 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
 var x = document.getElementById("myAudio");
 function disableMute() { 
     x.muted = false;
-  document.getElementById("myAudio").remove();
+    document.getElementById("audioButton").remove();
 }
 </script>
 
