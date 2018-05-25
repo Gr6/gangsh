@@ -64,8 +64,9 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
         }
     }
 }
+var x = document.getElementById("myAudio");
   unmuteButton.addEventListener('click', function() {
-    video.muted = false;
+    x.muted = false;
     document.getElementById("audioButton").remove();
   });
 </script>
