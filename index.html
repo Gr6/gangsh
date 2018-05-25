@@ -49,7 +49,7 @@
     </div>
   </div>
 
-<button id="unmuteButton">Disable Sound</button>
+<button id="unmuteButton">Enable Sound</button>
 <script>
 Element.prototype.remove = function() {
     this.parentElement.removeChild(this);
@@ -66,6 +66,13 @@ var x = document.getElementById("player");
     x.muted = false;
     document.getElementById("unmuteButton").remove();
   });
+</script>
+<script type="text/javascript">
+setTimeout("CallButton()",3000)
+function CallButton()
+{
+   document.getElementById("unmuteButton").click();    
+}
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
