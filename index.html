@@ -51,16 +51,9 @@
   </div>
 
   <button id="unmuteButton">aasdadsadsaad</button>
-<script>
-var source = "../i/audio.mp3";
-var audio = new Audio(); // use the constructor in JavaScript, just easier that way
-audio.addEventListener("load", function() {
-  audio.play();
-}, true);
-audio.src = source;
-audio.muted = true; // add this
-audio.loop = true; // add this
-</script>
+<audio loop muted>
+  <source src="../i/audio.mp3" type="audio/mpeg">
+</audio>
 <script>
   unmuteButton.addEventListener('click', function() {
     audio.muted = false;
