@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css?v1.2">
+    <title>RIP X - Bad Vibes Forever 💔</title>
+  </head>
+  <body>
+    <div id=text-contents>
+      <h1 id=ripx>RIP X</h1>
+      <h1 id=bvf>Bad Vibes Forever 💔</h1>
+      <h1 id=twttr><a href="https://twitter.com/wfq">@wfq</a></h1>
+      <h1 id=ogu><a href="https://ogusers.com/met">ogu/met</a></h1>
+    </div>
+    <div id=music-contents>
+    <audio autoplay><source src="i/bloodstains.mp3" type="audio/mpeg"></audio>
+    </div>
+    <div id=video-contents>
+   		<video autoplay muted id="player" class="player">
+     		<source src="i/ps2start.mp4" type="video/mp4">
+    	</video>
+	</div>
+<script>document.getElementById('player').addEventListener('ended', myHandler, false); function myHandler(e) { $( ".player" ).remove();	}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>
